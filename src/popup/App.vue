@@ -16,7 +16,7 @@
     bottom: 6px;
     font-weight: 700;
     color: #fff;
-    text-shadow: 1px 1px 2px #0e0e0e;"
+    text-shadow: 1px 1px 2px #0e0e0e;padding-left: 2px;"
       >
         <p>{{ text }}</p>
         <hr />
