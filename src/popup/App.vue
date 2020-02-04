@@ -8,7 +8,7 @@
     <div v-else>
       <label>IP:</label><input type="text" v-model="ip" />
       <button type="button" @click="changeServer">Change Server</button>
-      <video id="video" width="280" height="500" autoplay @click="play">
+      <video id="video" width="280" height="500" autoplay loop @click="play">
         <source :src="url" type="video/mp4" />
       </video>
       <div
@@ -18,10 +18,10 @@
     color: #fff;
     text-shadow: 1px 1px 2px #0e0e0e;"
       >
-        <p>Nickname: {{ nickname }}</p>
-        <p>UniqueId: {{ uniqueId }}</p>
-        <p>MusicName: {{ musicName }}</p>
-        <p>AuthorName: {{ authorName }}</p>
+        <p>{{ text }}</p>
+        <hr />
+        <p>Nickname: {{ nickname }} - {{ uniqueId }}</p>
+        <p>AuthorName: {{ authorName }} - {{ musicName }}</p>
       </div>
     </div>
   </div>
@@ -62,6 +62,9 @@ export default {
     document.body.addEventListener("wheel", this.change);
   },
   computed: {
+    text() {
+      return this.data[this.number].itemInfos.text;
+    },
     nickname() {
       return this.data[this.number].authorInfos.nickName;
     },
