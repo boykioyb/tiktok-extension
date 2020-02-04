@@ -40,7 +40,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     );
   },
   {
-    urls: ["*://*/*"]
+    urls: ["*://tiktok.com/*"]
   },
   ["blocking", "requestHeaders"]
 );
