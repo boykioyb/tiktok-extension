@@ -21,7 +21,7 @@
     "child_process": "^1.0.2",
     "fs": "^0.0.1-security",
     "jquery": "^3.4.1",
-    "jsdom": "^16.1.0",
+    "jsdom": "^16.5.0",
     "vue": "^2.6.10",
     "vuex": "^3.0.1",
     "webextension-polyfill": "^0.3.1"
